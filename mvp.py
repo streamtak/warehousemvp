@@ -397,12 +397,11 @@ def show_auth_screen(conn):
 
         role_label = st.radio(
             "Ρόλος",
-            ["Προμηθευτής", "Μαγαζί (Καφέ)", "Admin (διαχειριστής)"],
+            ["Προμηθευτής", "Μαγαζί (Καφέ)"],
         )
         role_map = {
             "Προμηθευτής": "supplier",
             "Μαγαζί (Καφέ)": "shop",
-            "Admin (διαχειριστής)": "admin",
         }
         role_value = role_map[role_label]
 
